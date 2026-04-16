@@ -1,0 +1,5 @@
+{"obj":{"age":67,"years_of_contributions":45,"disability_status":false,"hazardous_job_years":0},"ground_truth":"eligible"}
+{"obj":{"age":60,"years_of_contributions":20,"disability_status":true,"hazardous_job_years":5},"ground_truth":"eligible"}
+{"obj":{"age":50,"years_of_contributions":10,"disability_status":false,"hazardous_job_years":0},"ground_truth":"not_eligible"}
+{"obj":{"age":55,"years_of_contributions":30,"disability_status":false,"hazardous_job_years":15},"ground_truth":"eligible"}
+{"obj":{"age":40,"years_of_contributions":5,"disability_status":false,"hazardous_job_years":0},"ground_truth":"not_eligible"}
