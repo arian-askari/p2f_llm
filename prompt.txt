@@ -1,0 +1,37 @@
+Evaluate retirement eligibility for a person based on deterministic policy rules.
+
+Input:
+A Person record with these fields:
+- age: integer
+- years_of_contributions: integer
+- disability_status: boolean
+- hazardous_job_years: integer
+
+Decision policy:
+A person is considered eligible for retirement if at least one of the following rules is satisfied:
+
+Rule A: Standard retirement
+- The person's age is at least 67
+- The person has at least 10 years of contributions
+
+Rule B: Early retirement
+- The person's age is at least 63
+- The person has at least 40 years of contributions
+
+Rule C: Disability retirement
+- The person's disability_status is true
+- The person has at least 5 years of contributions
+
+Rule D: Hazardous occupation retirement
+- The person's age is at least 60
+- The person has worked at least 20 years in hazardous occupations
+
+Invalid input rules:
+- age must be 0 or greater
+- years_of_contributions must be 0 or greater
+- hazardous_job_years must be 0 or greater
+
+Output:
+Return true only if at least one retirement rule is satisfied.
+Return false if none of the rules is satisfied.
+Do not use subjective judgment, external knowledge, or assumptions beyond the provided fields.
