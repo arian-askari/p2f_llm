@@ -1,0 +1,13 @@
+model_name: "gemini-2.5-flash"
+app_name: "function_factory_app"
+user_id: "user_1"
+session_id: "session_001"
+query: "generate code"
+
+func_file_name: "retirement_check"
+func_base_path_dir: "./built_functions/"
+python_command: "python3"
+generated_func_return_type: "bool | dict"
+
+dataset_file: "./dataset.jsonl"
+prompt_file: "./prompt.txt"
